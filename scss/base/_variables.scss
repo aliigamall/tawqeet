@@ -1,0 +1,128 @@
+$font-family: "League Spartan", sans-serif;
+
+:root {
+  --color-focus-outer: #ffd337;
+  --color-focus-inner: var(--color-neutral-10);
+
+  // Elevation / Shadow
+  --shadow-inset-1: inset 0px 0.5px 4px rgba(96, 97, 112, 0.32);
+  --shadow-0: none;
+  --shadow-1: 0px 0px 1px rgba(40, 41, 61, 0.08), 0px 0.5px 2px rgba(96, 97, 112, 0.16);
+  --shadow-2: 0px 0px 1px rgba(40, 41, 61, 0.04), 0px 2px 4px rgba(96, 97, 112, 0.16);
+  --shadow-3: 0px 0px 2px rgba(40, 41, 61, 0.04), 0px 4px 8px rgba(96, 97, 112, 0.16);
+  --shadow-4: 0px 2px 4px rgba(40, 41, 61, 0.04), 0px 8px 16px rgba(96, 97, 112, 0.16);
+  --shadow-5: 0px 2px 8px rgba(40, 41, 61, 0.04), 0px 16px 24px rgba(96, 97, 112, 0.16);
+  --shadow-6: 0px 2px 8px rgba(40, 41, 61, 0.08), 0px 20px 32px rgba(96, 97, 112, 0.24);
+
+  // App Settings
+  --body-bg: var(--color-white);
+  --header-size: 70px;
+
+  --gutter-width: 20px;
+
+  // iOS Safe Areas (Notch Support)
+  --os-safe-area-top: env(safe-area-inset-top);
+  --os-safe-area-right: env(safe-area-inset-right);
+  --os-safe-area-bottom: env(safe-area-inset-bottom);
+  --os-safe-area-left: env(safe-area-inset-left);
+
+  --brand-width: 173px;
+  --brand-height: 55px;
+  --brand-md-width: 225px;
+  --brand-md-height: 72px;
+  --brand-lg-width: 325px;
+  --brand-lg-height: 103px;
+  --brand-color: var(--color-white);
+
+  --form-control-height: 48px;
+  --form-fill-height: 56px;
+  --button-height: 50px;
+}
+
+$sizes: (
+  "auto": auto,
+  "none": 0,
+  // 0
+  "xs": 0.25rem,
+  // 4px
+  "s": 0.5rem,
+  // 8px
+  "base": 1rem,
+  // 16px
+  "m": 1.5rem,
+  // 24px
+  "l": 2rem,
+  // 32px
+  "xl": 2.5rem,
+  // 40px
+  "xxl": 3rem,
+  // 48px
+  "xxxl": 5rem,
+  // 80px
+  "5xl": 8rem,
+  // 80px
+);
+$directions: (
+  "top": top,
+  "bottom": bottom,
+  "start": inline-start,
+  "end": inline-end,
+  "right": right,
+  "left": left,
+  "y": "",
+  "x": "",
+);
+
+$border-radii: (
+  "none": 0,
+  "tiny": 4px,
+  "soft": 6px,
+  "m": 10px,
+  "l": 24px,
+  "rounded": 6em,
+  "circle": 50%,
+);
+
+$border-sizes: (
+  "none": 0,
+  "base": 1px,
+  "m": 2px,
+  "l": 3px,
+  "xl": 6px,
+);
+
+//== images path
+$img-path: "/assets/images";
+$font-path: "/assets/fonts";
+
+$screen-xs: 0 !default;
+$screen-sm: 576px !default;
+$screen-md: 768px !default;
+$screen-lg: 992px !default;
+$screen-xl: 1400px !default;
+$screen-wd: 1600px !default;
+
+$breakpoints: (
+  xs: 480px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1600px,
+  xlst: 1920px,
+);
+$max-breakpoints: (
+  xs: 479px,
+  sm: 575px,
+  md: 767px,
+  lg: 991px,
+  xl: 1199px,
+  xxl: 1599px,
+);
+
+$youtubeClr: #bf232b;
+$twitterClr: #2aaae0;
+$facebookClr: #3a589b;
+$linkedinClr: #0e76a8;
+$whatsappClr: #0dc143;
+$instagramGradient: linear-gradient(40deg, rgb(249, 237, 50) 0%, rgb(238, 42, 123) 69%, rgb(0, 42, 255) 100%);

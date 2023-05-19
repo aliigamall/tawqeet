@@ -1,0 +1,33 @@
+.achivements {
+  background: url(../../assets/images/point.png) center right no-repeat;
+
+  [dir="rtl"] & {
+    background-position: center left;
+  }
+}
+
+.achivements .check-list {
+  position: relative;
+
+  @media only screen and (max-width: 576px) {
+    align-items: flex-start;
+  }
+}
+
+.achivements .check-list:not(:last-child) .check-list__icon {
+  &::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 72%;
+    left: 0.6875rem;
+    top: 33%;
+    margin: auto;
+    background-color: var(--color-Success);
+
+    [dir="rtl"] & {
+      left: auto;
+      right: 0.6875rem;
+    }
+  }
+}

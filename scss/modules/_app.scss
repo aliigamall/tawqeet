@@ -1,0 +1,224 @@
+:root {
+	--color-green: #2c593d;
+	--color-orange: #eb8c00;
+	--color-grey: #333;
+	--color-red: #961818;
+	--color-white: #fff;
+	--section-padding-x: 1rem;
+}
+
+html {
+	font-size: 32px;
+}
+
+body {
+	color: var(--color-grey);
+}
+
+.container {
+	width: 100%;
+	max-width: 1080px;
+	padding-right: var(--bs-gutter-x, 0);
+	padding-left: var(--bs-gutter-x, 0);
+	margin-right: auto;
+	margin-left: auto;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.font-num {
+	font-family: sans-serif;
+	font-weight: 700;
+	font-size: 3rem;
+}
+
+.app-header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem var(--section-padding-x) 0;
+}
+
+.date-time {
+	margin: 1rem 0 1.5rem;
+	padding: 0 var(--section-padding-x);
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr;
+	grid-template-rows: repeat(2, 1fr);
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+}
+
+.date-time__block {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.date-time__day-num {
+	@extend .font-num;
+	font-size: 2.5rem;
+	color: var(--color-orange);
+	background: url(../images/hexagon.svg) no-repeat center center;
+	width: 150px;
+	height: 150px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-size: cover;
+}
+
+.date-time__time {
+	@extend .font-num;
+	font-size: 3rem;
+	color: var(--color-green);
+}
+
+.date-time__month {
+	font-size: 1.3rem;
+	font-weight: 400;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.2rem;
+}
+
+.date-time__year {
+	@extend .font-num;
+	font-size: 1.2em;
+}
+
+.date-time__day {
+	font-size: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	&--en {
+		font-size: .8em;
+	}
+}
+
+.prayer-times {
+	display: flex;
+	gap: 1.5em;
+	flex-direction: column;
+	padding: 0 var(--section-padding-x);
+	margin-bottom: 1rem;
+}
+
+.prayer-times__row {
+	display: flex;
+	gap: 1em;
+	align-items: center;
+	justify-content: space-between;
+
+	&--active {
+		.prayer-times__athan-time {
+			color: var(--color-red);
+		}
+	}
+}
+
+.prayer-times__athan {
+	font-size: 2.5rem;
+	flex: 0 0 33%;
+
+	&--en {
+		direction: ltr;
+		text-transform: uppercase;
+		font-size: 2.3em;
+		text-align: left;
+	}
+}
+
+.prayer-times__athan-time {
+	flex: 1;
+	@extend .font-num;
+	text-align: center;
+	font-weight: 400;
+}
+
+.sunrise-duha {
+	border-top: 1px solid var(--color-grey);
+	display: flex;
+	margin-top: auto;
+	padding: 0.6rem 0 0.3rem;
+}
+
+.sunrise-duha__cell {
+	flex: 0 0 50%;
+	display: flex;
+	gap: 0.3em;
+	flex-direction: column;
+	align-items: center;
+
+	&--duha {
+		.sunrise-duha__cell-duration {
+			color: var(--color-green);
+		}
+	}
+}
+
+.sunrise-duha__cell-time {
+	display: flex;
+	gap: 0.3em;
+	flex-direction: column;
+	align-items: center;
+	font-size: 1.15rem;
+
+	span {
+		text-transform: uppercase;
+	}
+}
+
+.sunrise-duha__cell-duration {
+	@extend .font-num;
+	color: var(--color-red);
+}
+
+.app-footer {
+	background-color: var(--color-green);
+	color: var(--color-white);
+	display: flex;
+	padding: 0.6rem 0 0.3rem;
+}
+
+.app-footer__cell {
+	flex: 0 0 50%;
+	display: flex;
+	gap: 0.3em;
+	flex-direction: column;
+	align-items: center;
+}
+
+.app-footer__cell-time {
+	display: flex;
+	gap: 0.3em;
+	flex-direction: column;
+	align-items: center;
+	font-size: 0.65rem;
+}
+
+.app-footer__cell-duration {
+	@extend .font-num;
+	font-size: 1.5rem;
+	color: var(--color-red);
+}
+
+.app-footer__next-athan {
+	display: flex;
+	flex-direction: column;
+	gap: 0.2em;
+	align-items: center;
+	font-size: 1.25rem;
+
+	span {
+		font-size: .8em;
+	}
+}
+
+.app-footer__time {
+	@extend .font-num;
+}

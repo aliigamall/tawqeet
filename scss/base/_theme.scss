@@ -1,0 +1,17 @@
+:root {
+  --font-family: "Almarai", sans-serif;
+
+  // app
+  --header-bg: #292a35;
+  --footer-bg: #fff;
+  --nav-bg: #fff;
+
+  // Color - Navbar
+  --color-navbar: var(--color-black-1);
+  --color-navbar--hover: var(--color-main-blue);
+
+  --header-height: 105px;
+  --side-nav-width: 64px;
+  --side-nav-transition: cubic-bezier(0.25, 0.8, 0.25, 1);
+  --side-nav-duration: 0.2s;
+}
